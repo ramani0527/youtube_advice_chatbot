@@ -49,3 +49,4 @@ if __name__ == "__main__":
 
     for video_id, path in transcripts.items():
         ingest_file(path, video_id, model, client)
+

@@ -1,5 +1,7 @@
 FROM python:3.11-slim
-WORKDIR /app/src
+
+WORKDIR /app
+
 
 RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 
