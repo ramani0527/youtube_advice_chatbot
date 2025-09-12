@@ -1,5 +1,5 @@
-from utils.retriever import TranscriptRetriever
-from utils.generator import generate_answer
+from retriever import TranscriptRetriever
+from generator import generate_answer
 import bert_score
 
 EVAL_CASES = [

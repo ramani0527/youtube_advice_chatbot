@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
-from utils.retriever import TranscriptRetriever
-from utils.generator import generate_answer
+from retriever import TranscriptRetriever
+from generator import generate_answer
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 

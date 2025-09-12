@@ -1,5 +1,5 @@
-from utils.retriever import TranscriptRetriever
-from utils.generator import generate_answer
+from retriever import TranscriptRetriever
+from generator import generate_answer
 
 EVAL_CASES = [
     {"question": "How to improve video introductions?", "expected_video": "aprilynne"},
@@ -36,7 +36,7 @@ if __name__ == "__main__":
     eval_results = run_generation_eval()
     print("=== Generation Evaluation ===")
     for r in eval_results:
-        status = "✅ PASS" if r["pass"] else "❌ FAIL"
+        status = "PASS" if r["pass"] else "FAIL"
         print(f"Q: {r['question']}")
         print(f"Expected: {r['expected']}")
         print(f"Answer:\n{r['answer']}\n")
