@@ -8,7 +8,6 @@ retriever = TranscriptRetriever()
 
 class AskRequest(BaseModel):
     question: str
-    video_id: str | None = None
     top_k: int = 5
 
 @router.post("/ask")

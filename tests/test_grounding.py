@@ -1,4 +1,4 @@
-from src.utils.generator import generate_answer
+from utils.generator import generate_answer
 
 def test_grounding_video_specific():
     retrieved = [{
