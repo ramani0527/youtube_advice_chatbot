@@ -1,9 +1,5 @@
 from typing import List, Dict, Optional
-from dotenv import load_dotenv
-
 import os
-
-load_dotenv()
 
 try:
     from openai import OpenAI
@@ -56,5 +52,5 @@ Rules:
         )
         return response.choices[0].message.content.strip()
 
-    # Fallback: simple stitched answer
+  
     return "\n".join(f"- {c}" for c in context_chunks)

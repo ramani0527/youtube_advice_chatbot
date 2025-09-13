@@ -23,7 +23,6 @@ def ingest_file(file_path, video_id, model, client):
     entries = load_transcript(file_path)
     chunks = chunk_transcript(entries, chunk_size=3)
 
-    # attach video_id
     for c in chunks:
         c["video_id"] = video_id
 

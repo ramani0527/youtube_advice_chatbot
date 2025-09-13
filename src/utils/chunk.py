@@ -9,7 +9,7 @@ def chunk_transcript(entries, chunk_size=5):
             continue
         text = " ".join([g["text"] for g in group])
         chunks.append({
-            "video_id": "unknown",  # will be overridden in ingestion
+            "video_id": "unknown",  
             "text": text,
             "start_time": group[0]["start_time"],
             "end_time": group[-1]["end_time"]
