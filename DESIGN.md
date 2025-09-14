@@ -1,9 +1,6 @@
 
 **Design**
 
-
-![Arch_Image](https://github.com/user-attachments/assets/abee326f-33c3-4588-a138-90398bec7561)
-
 **Goals**
 
 	•	Build a chatbot that gives YouTube creators advice grounded in transcripts only.
@@ -13,6 +10,7 @@
 
 **Architecture**
 
+    	![Arch_Image](https://github.com/user-attachments/assets/abee326f-33c3-4588-a138-90398bec7561)
 **Components**
 
 	1.	Preprocessor (preprocessor.py)
