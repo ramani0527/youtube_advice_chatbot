@@ -1,5 +1,11 @@
+import sys
+import os
+
+project_root = os.path.dirname(os.path.dirname(__file__))
+sys.path.insert(0, project_root)
+
 from fastapi.testclient import TestClient
-from src.main import app
+from src.main import app  
 
 client = TestClient(app)
 
